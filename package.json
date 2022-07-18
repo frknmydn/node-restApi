@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "owasp": "owasp-dependency-check --project \"nodejs-TS-restApi\" -f HTML JSON"
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +28,7 @@
     "mongodb-memory-server": "^8.7.2",
     "mongoose": "^6.4.4",
     "nanoid": "^3.3.4",
+    "owasp-dependency-check": "0.0.21",
     "pino": "^8.1.0",
     "pino-pretty": "^8.1.0",
     "prom-client": "^14.0.1",
